@@ -92,7 +92,7 @@ public class BaseSteps {
 		} else {
 
 			if (browser.equals("chrome") && DriverManager.getDriver() == null) {
-				System.out.println("Launching : " + browser);
+				System.out.println("Launching : " + browser + " on local !!!");
 				//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverExePath());
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();

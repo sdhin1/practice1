@@ -45,6 +45,7 @@ public class QEdgeHomePage extends LoadableComponent<QEdgeHomePage> {
 	@Override
 	protected void load() {
 		this.driver.get(testURL);
+		System.out.println("***** Loading URL "+testURL+" ******");
 	}
 
 	@Override
