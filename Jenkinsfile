@@ -24,4 +24,9 @@ pipeline {
             }
         }
     }
+	post {
+		always {
+			build quietPeriod: 10, job: 'PRACTICE1_DOCKER_RUNNER'
+		}	
+	}
 }
