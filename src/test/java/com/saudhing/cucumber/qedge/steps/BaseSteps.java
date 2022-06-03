@@ -78,10 +78,10 @@ public class BaseSteps {
 			try {
 				//driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 				//office
-				//driver = new RemoteWebDriver(new URL("http://10.203.86.85:4444/wd/hub"), cap);
+				driver = new RemoteWebDriver(new URL("http://10.203.86.85:4444/wd/hub"), cap);
 				
 				//home
-				driver = new RemoteWebDriver(new URL("http://192.168.1.6:4444/wd/hub"), cap);
+				//driver = new RemoteWebDriver(new URL("http://192.168.1.6:4444/wd/hub"), cap);
 				System.out.println("Starting the session on Grid !!!");
 				log.info("Starting the session on Grid !!!");
 			} catch (MalformedURLException e) {
